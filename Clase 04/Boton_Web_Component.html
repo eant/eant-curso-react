@@ -1,0 +1,35 @@
+<!--
+/*****************************/
+/* Curso de React - Clase #4 */
+/*****************************/
+
+/********* ▼ Boton con Web Component ▼ *********/
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Boton con Web Component</title>
+	</head>
+	<body>
+
+		<fetch-button></fetch-button>
+		<fetch-button></fetch-button>
+		<fetch-button></fetch-button>
+		<fetch-button></fetch-button>
+
+		<script>
+			class fetchButton extends HTMLElement {
+				constructor(){
+					super()
+				}
+
+				connectedCallback(){
+					this.innerHTML = `<div><button>Fetch</button></div>`
+				}
+			}
+
+			window.customElements.define('fetch-button', fetchButton)
+		</script>
+	</body>
+</html>

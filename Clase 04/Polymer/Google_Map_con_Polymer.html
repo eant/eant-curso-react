@@ -1,0 +1,42 @@
+<!--
+/*****************************/
+/* Curso de React - Clase #4 */
+/*****************************/
+
+/********* ▼ POLYMER ▼ *********/
+Ejemplo de un Componente Google Map con Polymer
+
+1) Tener instalado Node.js y Git
+2) Instalar...
+
+	npm install bower -g
+
+	bower install --save GoogleWebComponents/google-map
+
+	npm install http-server
+
+3) Codear
+4) Ejecutar el server en 127.0.0.1:80808 con:
+
+	sudo ./node_modules/http-server/bin/http-server
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Google Map con Polymer</title>
+		<link rel="import" href="bower_components/google-map/google-map.html">
+		<style>
+			google-map {
+				height: 500px
+			}
+		</style>
+	</head>
+	<body>
+
+		<google-map fit-to-makers>
+			<google-map-maker latitude="-38.100575" longitude="-54.852838"></google-map-maker>
+		</google-map>
+
+	</body>
+</html>

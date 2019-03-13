@@ -1,0 +1,29 @@
+body{
+    font-family: "Open Sans";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.user-input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+}
+
+.user-button{
+    padding: 10px;
+    background: #36a5c1;
+    color: white;
+    border: 0;
+    font-family: "Open Sans";
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}

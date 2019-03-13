@@ -1,0 +1,50 @@
+<!--
+/*****************************/
+/* Curso de React - Clase #4 */
+/*****************************/
+
+/********* ▼ POLYMER ▼ *********/
+Ejemplo de un Componente Google Sheets con Polymer
+
+1) Tener instalado Node.js y Git
+2) Instalar...
+
+	npm install bower -g
+
+	bower install --save GoogleWebComponents/google-sheets
+
+	npm install http-server
+
+3) Codear
+4) Ejecutar el server en 127.0.0.1:80808 con:
+
+	sudo ./node_modules/http-server/bin/http-server
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>Google Sheets con Polymer</title>
+		<link rel='import' href='bower_components/google-sheets/google-sheets.html'>
+	</head>
+	<body>
+
+		<google-sheets
+			id="sheet"
+			key="15o5Be_7BvnuvU9wMBBS0Dz0hOFptbn4o1Z5TtpUVmcw"
+			tab-id="1"
+			publisehd
+			rows="{{rows}}"
+			rows="{{tab}}"
+			open-in-google-docs-url="{{OpenInGoogleDocsUrl}}"
+		>
+
+			<template>
+				
+			</template>
+			
+		</google-sheets>
+		
+
+	</body>
+</html>
